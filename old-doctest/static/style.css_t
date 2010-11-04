@@ -1,0 +1,279 @@
+/* vim: set filetype=css: */
+@import url("basic.css");
+
+/* {{ theme_test }} */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+}
+
+body {
+  font-family: {{ theme_bodyfont }};
+  font-size: 15px;
+  background: {{ theme_sidebarbgcolor }};
+}
+
+h1, h2, h3, h4, h5, h6, p.admonition-title, th.field-name {
+  font-family: {{ theme_headfont }};
+  font-weight: normal;
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 -10px 10px;
+  border-bottom: 1px solid {{ theme_h1underlinecolor }};
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+p, ul, ol, h2, h3, h4, h5, h6, dl {
+  margin: 0;
+  padding: 10px 0;
+}
+
+blockquote {
+  padding-left: 40px;
+  background: url("quote.gif") no-repeat left 10px;
+}
+
+.admonition p, .admonition ul, .admonition ol {
+  padding: 0;
+}
+
+pre, .admonition {
+  margin: 10px -10px;
+  padding: 9px;
+}
+pre, tt, code, .admonition {
+  border: 1px solid;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+pre, tt, code {
+  background: {{ theme_codebgcolor }};
+}
+pre.failure {
+  border-color: #d46;
+  background: #fdd;
+}
+pre, tt, code {
+  font-family: {{ theme_codefont }};
+  border-color: {{ theme_codebordercolor }};
+}
+pre {
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+tt, code {
+  padding: 0 0.25em;
+}
+
+dt tt, dt em {
+  border: none;
+  font-family: {{ theme_codeheadfont }}
+}
+
+tt.descname {
+  font-size: 1.25em;
+}
+
+dt em {
+  font-style: normal;
+  color: {{ theme_codeheadargcolor }};
+}
+
+em.property {
+  font-size: 11px;
+  color: {{ theme_codeheadhintcolor }};
+}
+
+div.admonition {
+  padding-top: 0;
+  font-size: 80%;
+}
+.admonition-title {
+  padding: 0;
+}
+
+.seealso {
+  border-color: {{ theme_seealsobordercolor }};
+  background: {{ theme_seealsobgcolor }};
+}
+.seealso .admonition-title {
+  color: {{ theme_seealsoheadcolor }};
+}
+
+.note {
+  border-color: {{ theme_notebordercolor }};
+  background: {{ theme_notebgcolor }};
+}
+.note .admonition-title {
+  color: {{ theme_noteheadcolor }};
+}
+
+th.field-name {
+  font-weight: bolder;
+}
+td.field-body {
+  font-size: 80%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  color: {{ theme_linkcolor }};
+}
+
+a:visited {
+  color: {{ theme_visitedcolor }};
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin-left: 30px;
+}
+
+.headerlink:link,
+.headerlink:visited {
+  margin-left: 0.5em;
+  padding: 2px 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  font-size: 75%;
+  color: #999;
+  background: #fff;
+}
+
+.headerlink:hover {
+  color: #777;
+  background: #eee;
+  text-decoration: none;
+}
+
+.document {
+  min-width: 950px;
+}
+
+div.sphinxsidebar {
+  /*
+  position: fixed;
+  left: 701px;
+  */
+  float: left;
+  width: 249px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+p.logo {
+  text-align: center;
+}
+
+.documentwrapper {
+  float: left;
+  width: 700px;
+  background: {{ theme_bodybgcolor }};
+  border-right: 1px solid {{ theme_sidebarbordercolor }};
+}
+
+.bodywrapper {
+  margin: 45px;
+}
+
+.footer {
+  width: 630px;
+  padding: 20px 35px;
+  border-top: 1px solid {{ theme_bodyshadowcolor }};
+  font-size: 11px;
+  color: #666;
+}
+
+.sphinxsidebar h3, .sphinxsidebar h4, .sphinxsidebar h5, .sphinxsidebar h6 {
+  border-top: 1px solid {{ theme_sidebarseparatorcolor }};
+  padding-top: 10px;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.sphinxsidebar h3 a, .sphinxsidebar h4 a, .sphinxsidebar h5 a,
+.sphinxsidebar h6 a {
+  color: #000;
+}
+
+.sphinxsidebar li, .sphinxsidebar p {
+  margin-left: 10px;
+}
+
+.sphinxsidebar li li {
+  margin-left: 0;
+}
+
+.search [type=text], [type=text] {
+  border: 1px solid;
+  border-color: #666 #999 #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 0 10px;
+  width: 192px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.search [type=text] {
+  margin: 0 10px;
+}
+
+.search [type=submit], [type=submit] {
+  position: absolute;
+  left: -9999px;
+}
+
+#searchbox p {
+  margin :0;
+}
+
+#search-results p, ul.search li div.context, ul.search li span {
+  font-size: 12px;
+}
+
+ul.search, ul.search li, ul.search li div.context {
+  margin-left: 0;
+}
+
+ul.search li div.context {
+  margin-top: 0.75em;
+}
+
+.highlighted {
+  background: #cf6;
+}
+
+#search-results .highlighted {
+  font-weight: bolder;
+}
+
+dt:target {
+  background: #ff9;
+}
