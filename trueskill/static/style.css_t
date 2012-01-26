@@ -1,0 +1,230 @@
+@import url("basic.css");
+
+body {
+  font-family: Verdana, sans-serif;
+  /*'Lucida Sans Unicode', 'Lucida Grande', sans-serif;*/
+  font-size: 13px;
+  line-height: 1.6;
+  color: #eed;
+  background: url(bg.gif);
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: -50px;
+  text-indent: -9999px;
+  background: url(trueskill.png) no-repeat center center;
+  width: 530px;
+  height: 240px;
+}
+
+h1 {
+  display: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  margin: 20px -20px 0;
+  padding: 21px 0 9px;
+  font-size: 24px;
+  font-weight: normal;
+  text-shadow: 0 1px 0 #f4d18e;
+  text-align: center;
+  line-height: 40px;
+  color: #7a572a;
+  background: url(title.png) no-repeat bottom;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 0 2px 1px #33472b;
+  color: #f1ebc9;
+}
+
+em {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #95b7cf;
+}
+a:visited {
+  color: #b5a6b6;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  margin: 0.25em -15px;
+}
+
+.highlight pre, .pre {
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: #d6dab1;
+}
+
+.highlight pre {
+  padding: 9px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  background: url(code.png) repeat-y;
+}
+
+.pre {
+  padding: 0 2px;
+  color: #c8d841;
+  background: url(code.gif);
+}
+
+dt:target, .highlighted {
+  background: transparent;
+}
+
+.figure {
+  text-align: center;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.footer {
+  margin: 40px -15px 20px;
+  font-size: 11px;
+  text-align: center;
+  color: #0d1808;
+  text-shadow: 0 1px 0 #738a52;
+}
+
+.footer :link, .footer :visited {
+  color: #0d1808;
+}
+
+.tocwrapper {
+  padding: 0;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.toc {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  border: solid #e9e6d7;
+  border-width: 1px 0;
+}
+
+.toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0;
+  padding: 0;
+}
+
+.toc ul ul li {
+  background: url(tree.gif) no-repeat 5px 0;
+  line-height: 20px;
+  margin-left: 6px;
+  padding-left: 16px;
+}
+
+.toc ul ul li:last-child {
+  background-repeat: no-repeat;
+  background-position: 5px -1766px;
+}
+
+.toc > ul > li > a {
+  background: url(favicon.ico) no-repeat 4px;
+  padding: 2px;
+  padding-left: 24px;
+  font-weight: bolder;
+  color: #554;
+}
+
+.toc a tt {
+  font-weight: normal;
+}
+
+.showtoc, .hidetoc {
+  font-size: 11px;
+  text-align: center;
+  color: #ba9;
+}
+
+.showtoc span, .hidetoc span {
+  cursor: pointer;
+  color: #765;
+}
+
+.hidetoc {
+  display: none;
+}
+
+.field-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.field-list .field-name {
+  font-weight: normal;
+}
+
+.note {
+  border: 1px solid #eed;
+  font-size: 11px;
+  background: #ffe;
+}
+.admonition p {
+  margin: 0.5em 0;
+}
+
+table.docutils {
+  border: 2px solid #e9e6d7;
+}
+table.docutils td, table.docutils th {
+  border: 1px solid #e9e6d7;
+  padding: 5px;
+  font-size: 12px;
+}
+table.docutils {
+  margin: 0;
+  background: #f8f8f0;
+}
+table.field-list td, table.field-list th {
+  padding: 0;
+  padding-right: 20px;
+}
+table.field-list {
+  border: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
+dl dt, table.field-list {
+  color: #cfcbb6;
+}
+dl tt {
+  color: #fff;
+}
+table.field-list .field-name {
+  color: #8b9a6c;
+}
+table.field-list strong {
+  color: #c8d841;
+  font-family: monospace;
+}
