@@ -23,6 +23,23 @@
 {% block footer %}
     {{ super() }}
   </div>
+  {% if theme_google_analytics %}
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ theme_google_analytics }}']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var isHTTPS = 'https:' == document.location.protocol;
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = (isHTTPS ? 'https://ssl' : 'http://www')
+             + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  {% endif %}
 {% endblock %}
 {# do not display relbars #}
 {% block relbar1 %}{% endblock %}
