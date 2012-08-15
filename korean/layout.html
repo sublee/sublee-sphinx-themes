@@ -1,5 +1,6 @@
 {% extends "basic/layout.html" %}
 {% block header %}
+  <h1 style="display:none"><img src="_static/image.png" alt="" /></h1>
   <div class="wrap">
     {{ super() }}
 {% endblock %}
@@ -28,11 +29,12 @@
 {% block relbar1 %}{% endblock %}
 {% block relbar2 %}
   {% if theme_github_fork %}
-  <a href="http://github.com/{{ theme_github_fork }}"><img
-    style="position: absolute; top: 0; right: 0; border: 0;"
-    src="{{ 'http://s3.amazonaws.com/github/ribbons/' ~
-            'forkme_right_darkblue_121621.png' }}"
-    alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/{{ theme_github_fork }}" style="
+      display: block; position: absolute; top: 0; right: 0;
+      width: 149px; height: 149px; text-indent: -9999px;
+      background: url({{ 'http://s3.amazonaws.com/github/ribbons/' ~
+                         'forkme_right_darkblue_121621.png' }}) no-repeat;
+      ">Fork me on GitHub</a>
   {% endif %}
 {% endblock %}
 {% block sidebar1 %}{% endblock %}
