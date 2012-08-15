@@ -1,0 +1,41 @@
+{% extends "basic/layout.html" %}
+{% block header %}
+  <div class="wrap">
+    {{ super() }}
+{% endblock %}
+{% block footer %}
+    {{ super() }}
+  </div>
+  {% if theme_google_analytics %}
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ theme_google_analytics }}']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var isHTTPS = 'https:' == document.location.protocol;
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = (isHTTPS ? 'https://ssl' : 'http://www')
+             + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  {% endif %}
+{% endblock %}
+{# do not display relbars #}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}
+  {% if theme_github_fork %}
+  <a href="http://github.com/{{ theme_github_fork }}"><img
+    style="position: absolute; top: 0; right: 0; border: 0;"
+    src="{{ 'http://s3.amazonaws.com/github/ribbons/' ~
+            'forkme_right_darkblue_121621.png' }}"
+    alt="Fork me on GitHub" /></a>
+  {% endif %}
+{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+{% block sidebarsourcelink %}{% endblock %}
+{% block sidebarsearch %}{% endblock %}
