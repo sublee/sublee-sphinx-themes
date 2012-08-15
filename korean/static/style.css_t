@@ -1,0 +1,146 @@
+@import url(basic.css);
+@import
+url(http://fonts.googleapis.com/css?family=Berkshire+Swash|Philosopher|PT+Mono);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  background: #fff url(logo.png) no-repeat 60px 50px;
+}
+
+.wrap {
+  padding: 50px;
+  margin-left: 50px;
+  width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #000;
+}
+
+h1 {
+  margin: 20px 0 40px 60px;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+h2 {
+  padding-top: 15px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+em {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #369;
+}
+a:visited {
+  color: #669;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+tt, .highlight pre, .pre {
+  font-family: 'PT Mono', monospace;
+}
+
+.highlight {
+  border: 1px solid;
+  border-color: #bbb #ddd #ddd;
+  margin: 0.25em;
+}
+
+.highlight pre, .pre {
+  color: #333;
+}
+
+.highlight pre {
+  margin: 9px 14px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pre {
+  color: #333;
+  background: #eee;
+}
+
+dt:target, .highlighted {
+  background: #eee;
+}
+
+.figure {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #e9e6d7;
+  font-size: 11px;
+  text-align: center;
+}
+
+.field-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.field-list .field-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.descclassname {
+  color: #aaa;
+}
+.descname {
+  color: #000;
+}
+
+.note {
+  border: 1px solid #eed;
+  font-size: 11px;
+  background: #ffe;
+}
+.admonition p {
+  margin: 0.5em 0;
+}
+
+table.docutils {
+  border: 2px solid #e9e6d7;
+}
+table.docutils td, table.docutils th {
+  border: 1px solid #e9e6d7;
+  padding: 5px;
+  font-size: 12px;
+  color: #333;
+}
+table.docutils {
+  margin: 0;
+  background: #f8f8f0;
+}
+table.field-list td, table.field-list th {
+  padding: 0;
+  padding-right: 20px;
+}
+table.field-list {
+  border: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
