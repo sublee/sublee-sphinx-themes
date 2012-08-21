@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 20px 0 40px 60px;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Berkshire Swash', 'Batang', serif;
 }
 
 h2, h3, h4, h5, h6 {
