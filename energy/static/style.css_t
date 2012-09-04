@@ -1,0 +1,174 @@
+@import url(basic.css);
+@import
+  url(http://fonts.googleapis.com/css?family=Galindo|McLaren|Droid+Sans+Mono);
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 750px;
+  font-family: McLaren, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #347;
+  background: #d0e7f0 url(bg.gif) repeat-x left top;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 50px;
+  width: 650px;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-family: Galindo, sans-serif;
+  font-size: 30px;
+  background: url(logo.gif) no-repeat center top;
+}
+
+h2 {
+  margin-top: -8px;
+  text-align: center;
+  font-size: 11px;
+  color: #47a;
+}
+
+h1 a, h2 a {
+  display: none;
+}
+
+h3 {
+  float: left;
+  margin-left: -30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 45px;
+  color: #47a;
+  background: url(title.gif) no-repeat left;
+}
+
+h3 a {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: -10px;
+  margin-bottom: -5px;
+  width: 20px;
+  height: 50px;
+  visibility: visible !important;
+  text-indent: -9999px;
+  background: url(title.gif) no-repeat right;
+}
+
+h3:hover a {
+  padding: 0 10px;
+  text-indent: 0;
+}
+
+h3 a:link, h3 a:visited {
+  text-decoration: none;
+  color: #347;
+}
+
+p, .section {
+  clear: left;
+}
+
+em {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #28e;
+}
+a:visited {
+  color: #87d;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+tt, .highlight pre, .pre {
+  font-family: 'Droid Sans Mono', monospace;
+}
+
+tt {
+  color: #29a;
+}
+
+.highlight pre {
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.figure {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 11px;
+  color: #47a;
+}
+
+.footer a:link, .footer a:visited {
+  text-decoration: none;
+  color: #347;
+}
+
+.field-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.field-list .field-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.descclassname {
+  color: #aaa;
+}
+.descname {
+  color: #000;
+}
+
+.note {
+  border: 1px solid #eed;
+  font-size: 11px;
+  background: #ffe;
+}
+.admonition p {
+  margin: 0.5em 0;
+}
+
+table.docutils {
+  border: 2px solid #e9e6d7;
+}
+table.docutils td, table.docutils th {
+  border: 1px solid #e9e6d7;
+  padding: 5px;
+  font-size: 12px;
+  color: #333;
+}
+table.docutils {
+  margin: 0;
+  background: #f8f8f0;
+}
+table.field-list td, table.field-list th {
+  padding: 0;
+  padding-right: 20px;
+}
+table.field-list {
+  border: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
