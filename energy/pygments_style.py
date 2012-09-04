@@ -5,7 +5,7 @@ from pygments.token import Keyword, Name, Comment, String, Error, \
 
 
 class EnergyStyle(Style):
-    background_color = ""
+    background_color = "transparent"
     default_style = ""
 
     styles = {
@@ -15,9 +15,10 @@ class EnergyStyle(Style):
         Operator:                  "#334477", # class: 'o'
         Punctuation:               "#334477", # class: 'p'
         Name:                      "#334477", # class: 'n'
-        Name.Variable:             "#4477aa",
+        Name.Variable:             "#4477aa", # class: 'nv'
         Number:                    "#4477aa", # class: 'm'
         String:                    "#4477aa", # class: 's'
         Generic.Output:            "#334477", # class: 'go'
         Generic.Prompt:            "#4477aa", # class: 'gp'
+        Generic.Error:             "#bb6688", # class: 'gr'
     }

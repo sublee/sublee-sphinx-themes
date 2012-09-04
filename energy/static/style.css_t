@@ -1,6 +1,7 @@
 @import url(basic.css);
-@import
-  url(http://fonts.googleapis.com/css?family=Galindo|McLaren|Droid+Sans+Mono);
+@import url(http://fonts.googleapis.com/css?family=Galindo);
+@import url(http://fonts.googleapis.com/css?family=McLaren);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
 
 body {
   margin: 0;
@@ -73,7 +74,7 @@ h3 a:link, h3 a:visited {
   color: #347;
 }
 
-p, .section {
+p, dl, .section {
   clear: left;
 }
 
@@ -95,7 +96,7 @@ a:hover {
 }
 
 tt, .highlight pre, .pre {
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 tt {
@@ -112,6 +113,10 @@ tt {
   text-align: center;
 }
 
+.headerlink {
+  padding-left: 0.5em;
+}
+
 .footer {
   margin-top: 50px;
   text-align: center;
@@ -125,50 +130,42 @@ tt {
 }
 
 .field-list ul {
-  list-style: none;
-  padding-left: 0;
+  padding-left: 10px;
+  list-style: square;
 }
 
 .field-list .field-name {
-  font-family: 'Times New Roman', Times, serif;
   font-weight: normal;
 }
 
+dl {
+  font-size: 15px;
+}
+
+dt:target, .highlighted {
+  background: #dffaf9;
+}
+
 .descclassname {
-  color: #aaa;
+  color: #47a;
 }
+
 .descname {
-  color: #000;
+  color: #347;
 }
 
-.note {
-  border: 1px solid #eed;
-  font-size: 11px;
-  background: #ffe;
-}
-.admonition p {
-  margin: 0.5em 0;
-}
-
-table.docutils {
-  border: 2px solid #e9e6d7;
-}
-table.docutils td, table.docutils th {
-  border: 1px solid #e9e6d7;
-  padding: 5px;
-  font-size: 12px;
-  color: #333;
-}
-table.docutils {
-  margin: 0;
-  background: #f8f8f0;
+table.field-list {
+  margin-bottom: 10px;
 }
 table.field-list td, table.field-list th {
   padding: 0;
   padding-right: 20px;
 }
-table.field-list {
-  border: none;
-  margin-bottom: 10px;
-  background: transparent;
+table.field-list th {
+  color: #47a;
+}
+table.field-list strong {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: normal;
 }
