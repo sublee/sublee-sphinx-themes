@@ -1,6 +1,8 @@
 {% extends "basic/layout.html" %}
+{% block extrahead %}
+  <link rel="image_src" href="_static/image.png" />
+{% endblock %}
 {% block header %}
-  <h1 style="display:none"><img src="_static/image.png" alt="" /></h1>
   <div class="wrap">
     {{ super() }}
 {% endblock %}
