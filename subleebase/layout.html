@@ -10,7 +10,7 @@
 {# wrap contents #}
 {% block header %}
   <div class="wrap">
-    {% if theme_show_toc %}
+    {% if not theme_hide_toc %}
       <div class="tocwrapper">
         <div class="showtoc">(<span>Show Table Of Contents</span>)</div>
         <div class="hidetoc">(<span>Hide Table Of Contents</span>)</div>
