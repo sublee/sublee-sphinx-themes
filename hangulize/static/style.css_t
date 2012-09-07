@@ -1,4 +1,4 @@
-@import url("basic.css");
+@import url(basic.css);
 
 body {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
@@ -15,15 +15,14 @@ body {
   background-color: #f6f6eb;
 }
 
-.logo {
-  margin-top: 80px;
-  text-indent: -9999px;
-  background: url({{ theme_index_logo }}) no-repeat center center;
-  height: {{ theme_index_logo_height }};
-}
-
 h1 {
-  display: none;
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  background: url(hangulize.png) no-repeat center center;
+  width: 600px;
+  height: 120px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -100,7 +99,7 @@ dt:target, .highlighted {
 
 .tocwrapper {
   padding: 0;
-  padding-top: 20px;
+  margin: 210px auto 0;
   font-size: 12px;
 }
 

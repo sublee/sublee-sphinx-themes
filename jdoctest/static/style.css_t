@@ -1,4 +1,4 @@
-@import url("basic.css");
+@import url(basic.css);
 
 body {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
@@ -8,14 +8,14 @@ body {
   color: #554;
 }
 
-.logo {
-  text-indent: -9999px;
-  background: url({{ theme_index_logo }}) no-repeat center center;
-  height: {{ theme_index_logo_height }};
-}
-
 h1 {
-  display: none;
+  position: absolute;
+  top: 8px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  background: url(jdoctest.png) no-repeat center center;
+  width: 600px;
+  height: 120px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -100,6 +100,7 @@ dt:target, .highlighted {
 
 .tocwrapper {
   padding: 0;
+  margin: 128px auto 0;
   font-size: 12px;
 }
 

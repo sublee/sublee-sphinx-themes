@@ -29,20 +29,28 @@ h1 {
   background: url(logo.gif) no-repeat center top;
 }
 
-h2 {
-  margin-top: -8px;
-  text-align: center;
-  font-size: 11px;
-  color: #47a;
-}
-
-h1 a, h2 a {
+h1 a {
   display: none;
 }
 
-h3 {
+.section p {
+  margin-top: -8px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: #47a;
+}
+.section .section p {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #347;
+}
+
+h2 {
   float: left;
-  margin-left: -30px;
+  margin: 20px -30px;
   padding-left: 30px;
   padding-bottom: 5px;
   font-size: 20px;
@@ -51,7 +59,7 @@ h3 {
   background: url(title.gif) no-repeat left;
 }
 
-h3 a {
+h2 a {
   display: block;
   position: relative;
   float: right;
@@ -64,12 +72,12 @@ h3 a {
   background: url(title.gif) no-repeat right;
 }
 
-h3:hover a {
+h2:hover a {
   padding: 0 10px;
   text-indent: 0;
 }
 
-h3 a:link, h3 a:visited {
+h2 a:link, h2 a:visited {
   text-decoration: none;
   color: #347;
 }
