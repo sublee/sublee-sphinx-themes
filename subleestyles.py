@@ -2,6 +2,25 @@ from pygments.style import Style
 from pygments.token import *
 
 
+class RankingStyle(Style):
+
+    background_color = 'transparent'
+    default_style = ''
+
+    styles = {
+        Keyword:             '#778855', # class: 'k'
+        Operator:            '#553322', # class: 'o'
+        Punctuation:         '#553322', # class: 'p'
+        Name:                '#553322', # class: 'n'
+        Name.Variable:       '#778855', # class: 'nv'
+        Number:              '#778855', # class: 'm'
+        String:              '#778855', # class: 's'
+        Generic.Output:      '#553322', # class: 'go'
+        Generic.Prompt:      '#778855', # class: 'gp'
+        Generic.Error:       '#bb6688', # class: 'gr'
+    }
+
+
 class EnergyStyle(Style):
 
     background_color = 'transparent'
