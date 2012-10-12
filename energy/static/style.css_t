@@ -177,3 +177,9 @@ table.field-list strong {
   font-style: italic;
   font-weight: normal;
 }
+table.field-list .field-body {
+  padding-bottom: 10px;
+}
+table.field-list .field-body p {
+  font-size: 15px;
+}
