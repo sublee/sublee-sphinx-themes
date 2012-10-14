@@ -22,7 +22,7 @@ body {
 
 h1 {
   margin-bottom: 0;
-  padding-top: 80px;
+  padding-top: 90px;
   text-align: center;
   font-family: Galindo, sans-serif;
   font-size: 30px;
@@ -94,7 +94,7 @@ a:link, a:visited {
   text-decoration: none;
 }
 a:link {
-  color: #68a;
+  color: #489;
 }
 a:visited {
   color: #87b;
@@ -108,7 +108,7 @@ tt, .highlight pre, .pre {
 }
 
 tt {
-  color: #482;
+  color: #892;
 }
 
 .highlight pre {
