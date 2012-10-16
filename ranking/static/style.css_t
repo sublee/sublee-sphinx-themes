@@ -151,7 +151,7 @@ dl {
 }
 
 dt:target, .highlighted {
-  background: #dffaf9;
+  background: #efc;
 }
 
 .descclassname {
