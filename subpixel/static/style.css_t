@@ -39,6 +39,7 @@ h1 a {
   font-size: 11px;
   font-weight: bold;
   color: {{ theme_title_color }};
+  letter-spacing: -1px;
 }
 .section .section p {
   margin-top: 20px;
@@ -46,6 +47,7 @@ h1 a {
   font-size: 20px;
   font-weight: normal;
   color: {{ theme_text_color }};
+  letter-spacing: 0;
 }
 
 h2 {
