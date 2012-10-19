@@ -7,6 +7,20 @@ from pygments.style import Style
 from pygments.token import *
 
 
+META_STYLES = {
+    Keyword:        'title_color', # class: 'k'
+    Operator:       'text_color',  # class: 'o'
+    Punctuation:    'text_color',  # class: 'p'
+    Name:           'text_color',  # class: 'n'
+    Name.Variable:  'title_color', # class: 'nv'
+    Number:         'title_color', # class: 'm'
+    String:         'title_color', # class: 's'
+    Generic.Output: 'text_color',  # class: 'go'
+    Generic.Prompt: 'title_color', # class: 'gp'
+    Generic.Error:  'vlink_color', # class: 'gr'
+}
+
+
 class ModuleHook(object):
 
     def __init__(self, module):
@@ -24,33 +38,16 @@ class ModuleHook(object):
         with open(path) as f:
             config.readfp(f)
         theme_options = dict(config.items('options'))
-        def replace(match):
-            color = theme_options.get(match.group(1), '#000000')
-            color = re.sub('#(.)(.)(.)$', '#\1\1\2\2\3\3', color)
-            return color
-        for token, opt in SubpixelStyle.meta_styles.iteritems():
+        tmp_styles = {}
+        for token, opt in META_STYLES.iteritems():
             color = theme_options.get(opt, '#000000')
-            color = re.sub('#(.)(.)(.)$', '#\1\1\2\2\3\3', color)
-            SubpixelStyle.styles[token] = color
+            color = re.sub('#(.)(.)(.)$', r'#\1\1\2\2\3\3', color)
+            tmp_styles[token] = color
+        class SubpixelStyle(Style):
+            background_color = 'transparent'
+            styles = tmp_styles
         SubpixelStyle.__name__ = '%sStyle' % theme.title()
         return SubpixelStyle
-
-
-class SubpixelStyle(Style):
-
-    background_color = 'transparent'
-    meta_styles = {
-        Keyword:        'title_color', # class: 'k'
-        Operator:       'text_color',  # class: 'o'
-        Punctuation:    'text_color',  # class: 'p'
-        Name:           'text_color',  # class: 'n'
-        Name.Variable:  'title_color', # class: 'nv'
-        Number:         'title_color', # class: 'm'
-        String:         'title_color', # class: 's'
-        Generic.Output: 'text_color',  # class: 'go'
-        Generic.Prompt: 'title_color', # class: 'gp'
-        Generic.Error:  'vlink_color', # class: 'gr'
-    }
 
 
 sys.modules[__name__] = ModuleHook(sys.modules[__name__])
