@@ -183,3 +183,8 @@ table.field-list .field-body {
 table.field-list .field-body p {
   font-size: 15px;
 }
+
+#MathJax_Message {
+  font-size: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+}
