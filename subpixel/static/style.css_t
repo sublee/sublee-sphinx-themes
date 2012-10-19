@@ -1,0 +1,185 @@
+@import url(basic.css);
+@import url(http://fonts.googleapis.com/css?family=Galindo);
+@import url(http://fonts.googleapis.com/css?family=McLaren);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 750px;
+  font-family: McLaren, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: {{ theme_text_color }};
+  background: {{ theme_bg_color }} url(bg.gif) repeat-x left top;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 50px;
+  width: 650px;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-top: {{ theme_logo_height }};
+  text-align: center;
+  font-family: Galindo, sans-serif;
+  font-size: 30px;
+  background: url(logo.gif) no-repeat center top;
+}
+
+h1 a {
+  display: none;
+}
+
+.section p {
+  margin-top: -8px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: {{ theme_title_color }};
+}
+.section .section p {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: {{ theme_text_color }};
+}
+
+h2 {
+  float: left;
+  margin: 20px -30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 45px;
+  color: {{ theme_title_color }};
+  background: url(title.gif) no-repeat left;
+}
+
+h2 a {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: -10px;
+  margin-bottom: -5px;
+  width: 20px;
+  height: 50px;
+  visibility: visible !important;
+  text-indent: -9999px;
+  background: url(title.gif) no-repeat right;
+}
+
+h2:hover a {
+  padding: 0 10px;
+  text-indent: 0;
+}
+
+h2 a:link, h2 a:visited {
+  text-decoration: none;
+  color: {{ theme_text_color }};
+}
+
+p, dl, .section {
+  clear: left;
+}
+
+em {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: {{ theme_link_color }};
+}
+a:visited {
+  color: {{ theme_vlink_color }};
+}
+a:hover {
+  text-decoration: underline;
+}
+
+tt, .highlight pre, .pre {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+tt {
+  color: {{ theme_code_color }};
+}
+
+.highlight pre {
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.figure {
+  text-align: center;
+}
+
+.headerlink {
+  padding-left: 0.5em;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 11px;
+  color: {{ theme_title_color }};
+}
+
+.footer a:link, .footer a:visited {
+  text-decoration: none;
+  color: {{ theme_text_color }};
+}
+
+.field-list ul {
+  padding-left: 10px;
+  list-style: square;
+}
+
+.field-list .field-name {
+  font-weight: normal;
+}
+
+dl {
+  font-size: 15px;
+}
+
+dt:target, .highlighted {
+  background: {{ theme_target_color }};
+}
+
+.descclassname {
+  color: {{ theme_title_color }};
+}
+
+.descname {
+  color: {{ theme_text_color }};
+}
+
+table.field-list {
+  margin-bottom: 10px;
+}
+table.field-list td, table.field-list th {
+  padding: 0;
+  padding-right: 20px;
+}
+table.field-list th {
+  color: {{ theme_title_color }};
+}
+table.field-list strong {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: normal;
+}
+table.field-list .field-body {
+  padding-bottom: 10px;
+}
+table.field-list .field-body p {
+  font-size: 15px;
+}
