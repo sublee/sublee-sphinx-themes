@@ -27,14 +27,16 @@ class ModuleHook(object):
         self.module = module
 
     def __getattr__(self, attr):
-        if attr.startswith('generate('):
-            return self.generate(re.search(r'\((.+)\)$', attr).group(1))
+        if attr.startswith('AutoStyle('):
+            theme_name = re.search(r'\((.+)\)$', attr).group(1)
+            return self.generate_pygments_style(theme_name)
         else:
             return getattr(self.module, attr)
 
-    def generate(self, theme):
+    def generate_pygments_style(self, theme_name):
         config = ConfigParser.ConfigParser()
-        path = os.path.join(os.path.dirname(__file__), theme, 'theme.conf')
+        path = os.path.join(os.path.dirname(__file__), '..',
+                            theme_name, 'theme.conf')
         with open(path) as f:
             config.readfp(f)
         theme_options = dict(config.items('options'))
@@ -43,11 +45,11 @@ class ModuleHook(object):
             color = theme_options.get(opt, '#000000')
             color = re.sub('#(.)(.)(.)$', r'#\1\1\2\2\3\3', color)
             tmp_styles[token] = color
-        class SubpixelStyle(Style):
+        class AutoStyle(Style):
             background_color = 'transparent'
             styles = tmp_styles
-        SubpixelStyle.__name__ = '%sStyle' % theme.title()
-        return SubpixelStyle
+        AutoStyle.__name__ = '%sStyle' % theme_name.title()
+        return AutoStyle
 
 
 sys.modules[__name__] = ModuleHook(sys.modules[__name__])
