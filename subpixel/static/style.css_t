@@ -149,38 +149,30 @@ tt {
   font-size: 11px;
   color: {{ theme_title_color }};
 }
-
 .footer a:link, .footer a:visited {
   text-decoration: none;
   color: {{ theme_text_color }};
 }
 
-.field-list ul {
-  padding-left: 10px;
-  list-style: square;
-}
-
-.field-list .field-name {
-  font-weight: 400;
-}
-
 dl {
   font-size: {{ small_font_size }};
 }
-
 dt:target, .highlighted {
   background: {{ theme_target_color }};
+}
+.section .section dd p {
+  margin-top: 0;
 }
 
 .descclassname {
   color: {{ theme_title_color }};
 }
-
 .descname {
   color: {{ theme_text_color }};
 }
 
 table.docutils {
+  margin: 0 auto 20px;
   font-size: {{ small_font_size }};
 }
 table.docutils th {
@@ -194,7 +186,15 @@ table.docutils th, table.docutils td {
 }
 
 table.field-list {
+  margin: 0;
   margin-bottom: 10px;
+}
+table.field-list ul {
+  padding-left: 10px;
+  list-style: square;
+}
+table.field-list .field-name {
+  font-weight: 400;
 }
 table.field-list td, table.field-list th {
   padding: 0;
