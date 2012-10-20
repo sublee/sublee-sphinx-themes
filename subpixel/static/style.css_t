@@ -1,14 +1,16 @@
 @import url(basic.css);
 @import url(http://fonts.googleapis.com/css?family=Galindo);
-@import url(http://fonts.googleapis.com/css?family=McLaren);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+{% set font_size = '18px' %}
+{% set small_font_size = '15px' %}
 
 body {
   margin: 0;
   padding: 0;
   min-width: 750px;
-  font-family: McLaren, sans-serif;
-  font-size: 20px;
+  font-family: Ubuntu, sans-serif;
   line-height: 1.5;
   color: {{ theme_text_color }};
   background: {{ theme_bg_color }} url(bg.gif) repeat-x left top;
@@ -38,17 +40,16 @@ h1 a {
   margin-top: -8px;
   margin-bottom: 10px;
   text-align: center;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 500;
   color: {{ theme_title_color }};
-  letter-spacing: -1px;
 }
 .section .section p {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: {{ font_size }};
+  font-weight: 400;
   color: {{ theme_text_color }};
   letter-spacing: 0;
 }
@@ -58,7 +59,8 @@ h2 {
   margin: 20px -30px;
   padding-left: 30px;
   padding-bottom: 5px;
-  font-size: 20px;
+  font-size: {{ font_size }};
+  font-weight: 500;
   line-height: 45px;
   color: {{ theme_title_color }};
   background: url(title.gif) no-repeat left;
@@ -93,7 +95,8 @@ h3 {
   padding-left: 10px;
   border-left: 10px solid {{ theme_title_color }};
   height: 10px;
-  font-size: 20px;
+  font-size: {{ font_size }};
+  font-weight: 500;
   line-height: 10px;
 }
 
@@ -128,7 +131,7 @@ tt {
 
 .highlight pre {
   padding-left: 30px;
-  font-size: 15px;
+  font-size: {{ small_font_size }};
   line-height: 1.4;
 }
 
@@ -158,11 +161,11 @@ tt {
 }
 
 .field-list .field-name {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 dl {
-  font-size: 15px;
+  font-size: {{ small_font_size }};
 }
 
 dt:target, .highlighted {
@@ -175,6 +178,19 @@ dt:target, .highlighted {
 
 .descname {
   color: {{ theme_text_color }};
+}
+
+table.docutils {
+  font-size: {{ small_font_size }};
+}
+table.docutils th {
+  border-bottom: 3px double {{ theme_title_color }};
+}
+table.docutils td {
+  border-color: {{ theme_shadow_color }};
+}
+table.docutils th, table.docutils td {
+  padding: 2px 5px;
 }
 
 table.field-list {
@@ -196,7 +212,7 @@ table.field-list .field-body {
   padding-bottom: 10px;
 }
 table.field-list .field-body p {
-  font-size: 15px;
+  font-size: {{ small_font_size }};
 }
 
 #MathJax_Message {
