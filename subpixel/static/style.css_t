@@ -1,7 +1,7 @@
 @import url(basic.css);
 @import url(http://fonts.googleapis.com/css?family=Galindo);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400);
 
 {% set font_size = '18px' %}
 {% set small_font_size = '15px' %}
@@ -91,7 +91,7 @@ h2 a:link, h2 a:visited {
 
 h3 {
   margin-left: -20px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-left: 10px;
   border-left: 10px solid {{ theme_title_color }};
   height: 10px;
@@ -102,10 +102,6 @@ h3 {
 
 p, dl, .section {
   clear: left;
-}
-
-em {
-  font-family: 'Times New Roman', Times, serif;
 }
 
 a:link, a:visited {
@@ -156,6 +152,9 @@ tt {
 
 dl {
   font-size: {{ small_font_size }};
+}
+dt em {
+  font-family: 'Times New Roman', Times, serif;
 }
 dt:target, .highlighted {
   background: {{ theme_target_color }};
