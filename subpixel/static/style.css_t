@@ -37,7 +37,7 @@ h1 a {
 
 /* subtitle */
 .section p {
-  margin-top: -8px;
+  margin-top: -10px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
