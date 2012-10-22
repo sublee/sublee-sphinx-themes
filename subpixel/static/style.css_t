@@ -5,6 +5,7 @@
 
 {% set font_size = '16px' %}
 {% set title_font_size = '18px' %}
+{% set code_font_size = '14px' %}
 
 body {
   margin: 0;
@@ -127,7 +128,7 @@ tt {
 
 .highlight pre {
   padding-left: 30px;
-  font-size: {{ font_size }};
+  font-size: {{ code_font_size }};
   line-height: 1.4;
 }
 
