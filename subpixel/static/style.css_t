@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400);
 
-{% set font_size = '14px' %}
+{% set font_size = '16px' %}
 {% set title_font_size = '18px' %}
 
 body {
@@ -163,10 +163,10 @@ dt:target, .highlighted {
   margin-top: 0;
 }
 
-.descclassname {
+tt.descclassname {
   color: {{ theme_title_color }};
 }
-.descname {
+tt.descname {
   font-size: {{ title_font_size }};
   color: {{ theme_text_color }};
 }
