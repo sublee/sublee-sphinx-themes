@@ -3,8 +3,8 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400);
 
-{% set font_size = '18px' %}
-{% set small_font_size = '15px' %}
+{% set font_size = '14px' %}
+{% set title_font_size = '18px' %}
 
 body {
   margin: 0;
@@ -59,7 +59,7 @@ h2 {
   margin: 20px -30px;
   padding-left: 30px;
   padding-bottom: 5px;
-  font-size: {{ font_size }};
+  font-size: {{ title_font_size }};
   font-weight: 500;
   line-height: 45px;
   color: {{ theme_title_color }};
@@ -95,7 +95,7 @@ h3 {
   padding-left: 10px;
   border-left: 10px solid {{ theme_title_color }};
   height: 10px;
-  font-size: {{ font_size }};
+  font-size: {{ title_font_size }};
   font-weight: 500;
   line-height: 10px;
 }
@@ -127,7 +127,7 @@ tt {
 
 .highlight pre {
   padding-left: 30px;
-  font-size: {{ small_font_size }};
+  font-size: {{ font_size }};
   line-height: 1.4;
 }
 
@@ -151,7 +151,7 @@ tt {
 }
 
 dl {
-  font-size: {{ small_font_size }};
+  font-size: {{ font_size }};
 }
 dt em {
   font-family: 'Times New Roman', Times, serif;
@@ -167,12 +167,13 @@ dt:target, .highlighted {
   color: {{ theme_title_color }};
 }
 .descname {
+  font-size: {{ title_font_size }};
   color: {{ theme_text_color }};
 }
 
 table.docutils {
   margin: 0 auto 20px;
-  font-size: {{ small_font_size }};
+  font-size: {{ font_size }};
 }
 table.docutils th {
   border-bottom: 3px double {{ theme_title_color }};
@@ -211,7 +212,7 @@ table.field-list .field-body {
   padding-bottom: 10px;
 }
 table.field-list .field-body p {
-  font-size: {{ small_font_size }};
+  font-size: {{ font_size }};
 }
 
 #MathJax_Message {
