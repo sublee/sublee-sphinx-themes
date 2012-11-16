@@ -38,16 +38,14 @@ h1 a {
 
 /* subtitle */
 .section p {
-  margin-top: -9px;
-  margin-bottom: 10px;
+  margin: -9px 0 10px 0;
   text-align: center;
   font-size: 12px;
   font-weight: 500;
   color: {{ theme_title_color }};
 }
 .section .section p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: left;
   font-size: {{ font_size }};
   font-weight: 400;
@@ -103,6 +101,10 @@ h3 {
 
 p, dl, .section {
   clear: left;
+}
+
+ul, ol {
+  margin: 20px 0;
 }
 
 a:link, a:visited {
