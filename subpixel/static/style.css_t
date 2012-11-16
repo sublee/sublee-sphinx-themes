@@ -7,6 +7,11 @@
 {% set title_font_size = '18px' %}
 {% set code_font_size = '14px' %}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -89,8 +94,7 @@ h2 a:link, h2 a:visited {
 }
 
 h3 {
-  margin-left: -20px;
-  margin-top: 30px;
+  margin: 20px 0 20px -20px;
   padding-left: 10px;
   border-left: 10px solid {{ theme_title_color }};
   height: 10px;
@@ -104,7 +108,7 @@ p, dl, .section {
 }
 
 ul, ol {
-  margin: 20px 0;
+  margin: 20px 0 20px 40px;
 }
 
 a:link, a:visited {
@@ -129,6 +133,7 @@ tt {
 }
 
 .highlight pre {
+  margin: 20px 0;
   padding-left: 30px;
   font-size: {{ code_font_size }};
   line-height: 1.4;
