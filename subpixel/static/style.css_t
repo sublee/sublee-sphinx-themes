@@ -95,7 +95,7 @@ h2 a:link, h2 a:visited {
 
 h3 {
   position: relative;
-  top: {{ (title_font_size|int - 10) / 2 }}px;
+  top: {{ (title_font_size[:-2]|int - 10) / 2 }}px;
   margin-left: -20px;
   padding-left: 10px;
   border-left: 10px solid {{ theme_title_color }};
