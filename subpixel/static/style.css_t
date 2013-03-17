@@ -181,7 +181,7 @@ tt.descname {
 }
 
 table.docutils {
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   font-size: {{ font_size }};
 }
 table.docutils th {
