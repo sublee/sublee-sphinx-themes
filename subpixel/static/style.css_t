@@ -224,6 +224,11 @@ table.field-list .field-body p {
   font-size: {{ font_size }};
 }
 
+.versionadded {
+  font-size: {{ code_font_size }};
+  opacity: 0.5;
+}
+
 #MathJax_Message {
   font-size: 10px;
   font-family: 'Ubuntu Mono', monospace;
