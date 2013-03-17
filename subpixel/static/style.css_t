@@ -224,7 +224,7 @@ table.field-list .field-body p {
   font-size: {{ font_size }};
 }
 
-.versionadded {
+.versionmodified {
   font-size: {{ code_font_size }};
   opacity: 0.5;
 }
