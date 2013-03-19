@@ -225,8 +225,34 @@ table.field-list .field-body p {
 }
 
 .versionmodified {
+  margin-right: 0.25em;
   font-size: {{ code_font_size }};
   opacity: 0.5;
+}
+
+div.admonition {
+  padding: 0 10px;
+  margin: 0 -10px 10px;
+  border: 1px solid {{ theme_title_color }};
+}
+
+div.admonition p {
+  margin: 10px 0 !important;
+  font-size: {{ code_font_size }} !important;
+}
+
+div.admonition p.admonition-title {
+  margin: 5px 0 !important;
+  color: {{ theme_title_color }};
+  font-size: 10px !important;
+}
+
+div.admonition.warning {
+  background: {{ theme_title_color }};
+}
+
+div.admonition.warning p {
+  color: {{ theme_bg_color }};
 }
 
 #MathJax_Message {
