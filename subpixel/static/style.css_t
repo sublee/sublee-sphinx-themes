@@ -256,7 +256,7 @@ div.admonition.warning {
   background: {{ theme_title_color }};
 }
 
-div.admonition.warning p {
+div.admonition.warning *, div.admonition.warning p {
   color: {{ theme_bg_color }};
 }
 
