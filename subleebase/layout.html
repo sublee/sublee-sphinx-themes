@@ -35,8 +35,12 @@
   </div>
   {% if theme_google_analytics %}
     <script>
+      var domainMatch = /https?:\/\/([^\/]+)/.exec(location.href);
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '{{ theme_google_analytics }}']);
+      if (domainMatch) {
+        _gaq.push(['_setDomainName', domainMatch[1]]);
+      }
       _gaq.push(['_trackPageview']);
       (function() {
         var isHTTPS = 'https:' == document.location.protocol;
