@@ -1,4 +1,7 @@
-import ConfigParser
+try:
+    from ConfigParser import ConfigParser
+except ImportError:
+    from configparser import ConfigParser
 import os
 import re
 import sys
@@ -35,7 +38,7 @@ class ModuleHook(object):
             return getattr(self.module, attr)
 
     def generate_pygments_style(self, theme_name):
-        config = ConfigParser.ConfigParser()
+        config = ConfigParser()
         path = os.path.join(os.path.dirname(__file__), '..',
                             theme_name, 'theme.conf')
         with open(path) as f:
