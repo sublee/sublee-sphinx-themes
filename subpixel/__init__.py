@@ -50,7 +50,7 @@ class ModuleHook(object):
             color = theme_options.get(opt, '#000000')
             color = re.sub('#(.)(.)(.)$', r'#\1\1\2\2\3\3', color)
             return color
-        for token, val in META_STYLES.iteritems():
+        for token, val in META_STYLES.items():
             tmp_styles[token] = re.sub(r'{(.+?)}', repl, val)
         class AutoStyle(Style):
             background_color = 'transparent'
